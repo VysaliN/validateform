@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="validate.css">
+</head>
+<body background="update.jpg">
+    <h1 align="center">Form</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>FullName</label><label class="validation-error hide" id="fullNameValidationError">*This field is required</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Contact Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label>Date of Birth</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label>EMP Code</label>
+                        <input type="number" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="pwd" id="pwd">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <textarea  name="address" id="address"></textarea>
+                    </div>
+                    <div>
+                        <label>Url</label>
+                        <input type="url" name="url" id="url">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList" style="margin-top:-350px">
+                    <thead>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Email</th>
+                            <th>Contact Number</th>
+                            <th>Date of Birth</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>Password</th>
+                            <th>Address</th>
+                            <th>Url</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="validate.js"></script>
+</body>
+</html>
+                 
+           
+    
